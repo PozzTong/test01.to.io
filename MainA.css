@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Staatliches&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.body-about{
+  background: #000 url(./h4.jpg) no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.logo img{
+  background:#231f20 ;
+  width: 120px;
+}
+.navbar ul{
+  background: #231f20;
+  width: 120px;
+  text-align: center;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 0px;
+  margin-top: -10px;
+  align-items: flex-end;
+}
+.navbar ul li{
+  list-style: none;
+}
+.navbar ul li a{
+  display: inline-block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.navbar ul li a:hover{
+  color: #019791;
+}
+.navbar ul .active a{
+  color: #019791;
+}
+.social a{
+  padding: 5px;
+  text-decoration: none;
+  
+}
+.social a:hover i{
+  color: #019791;
+  transform: scale(1.05);
+}
+.social a i{
+  color: #777;
+  font-size: 1.2rem;
+  transition: transform 100ms;
+}
+.banner{
+  display: flex;
+  flex-direction: column;
+  color: #ccc;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.banner h5{
+  font-size: 1.8rem;
+  color: #cc9;
+  font-family: 'Lobster', cursive;
+}
+.banner h1{
+  text-transform: uppercase;
+  font-size: 6rem;
+  color: #eee;
+  font-family: 'Staatliches', cursive;
+}
+.banner h1 span{
+  background: rgba(1, 151, 145, 0.5);
+  font-family: 'Staatliches', cursive;
+}
+.banner p{
+  font-size: 1.5rem;
+  color: aqua;
+  font-family: 'Lobster', cursive;
+}
+.about{
+  max-width: 350px;
+  width: 90%;
+  margin: 20vh auto;
+  background: rgba(8, 235, 227, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+.about h4{
+  font-size: 2rem;
+  color:#eee;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+}
+.about p {
+  color: #eee;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+
+
+  @media (max-width:400px) {
+    .body-about{
+    background-size: 150%;
+    background-position: center;
+  }
+  .navbar{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .navbar ul {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0;
+  }
+  
+    
+  }

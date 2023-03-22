@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Staatliches&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.body-about{
+  background:  url(./h4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.logo img{
+  width: 120px;
+  background: #231f20;
+}
+.navbar ul{
+  background: #231f20;
+  width: 120px;
+  text-align: center;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 0px;
+  margin-top: -10px;
+  align-items: flex-end;
+}
+.navbar ul li{
+  list-style: none;
+}
+.navbar ul li a{
+  display: inline-block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+.navbar ul li a:hover{
+  color: #019791;
+}
+.navbar ul .active2 a{
+  color: #019791;
+}
+.social a{
+  padding: 5px;
+  text-decoration: none;
+  
+}
+.social a:hover i{
+  color: #019791;
+  transform: scale(1.05);
+}
+.social a i{
+  color: #777;
+  font-size: 1.2rem;
+  transition: transform 100ms;
+}
+
+
+/*SubB*/
+.body-contact{
+  background: #000;
+}
+.ct-txt h4{
+  color: #ccc;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Staatliches', cursive;
+}
+.ct-sec form{
+  max-width: 500px;
+  width: 90%;
+  margin: 30px auto;
+}
+.form-control{
+  margin: 15px 0;
+}
+.form-control label{
+  color: #aaa;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.form-control input{
+  display: block;
+  width: 100%;
+  background: #231f20;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  color: #ccc;
+}
+.form-control textarea{
+   display: block;
+  width: 100%;
+  background: #231f20;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  color: #ccc;
+  resize: none;
+}
+.btn-holder{
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-holder button{
+  display: inline-block;
+ background: #019791;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 500ms, color 500ms;
+
+}
+.btn-holder button:hover{
+  border: 2px solid #019791;
+  background: #000;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+  @media (max-width:400px) {
+    .body-about{
+    background-size: 150%;
+    background-position: center;
+  }
+  .navbar{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  .navbar ul {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 0;
+  }
+  
+    
+  }
